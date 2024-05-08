@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "ja">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- ↓ページタイトル↓ -->
+    <title>QRescape</title>
+
+    <!-- ↓検索エンジン用ここから↓ -->
+    <meta name="Description" content="検索用文言">
+    <meta name="Keywords" content="検索用キーワードカンマ（,）区切り">
+    <!-- ↑検索エンジン用ここまで↑-->
+</head>
+
+<body>
+    <div id = "contents">
+        <img id="image_file" src="img/QRsample0.JPG" onclick="henkou()">
+
+        <script>
+          var img_src = new Array("img/QRsample0.JPG","img/qrsample1.JPG");
+          var i = 0;
+    
+          function henkou() {
+    
+            if (i == 1) {
+              i = 0;
+            } else {
+              i ++;
+            }
+            document.getElementById("image_file").src = img_src[i];
+          }
+    
+        </script>
+        
+    </div>
+
+
+</body>
+</html>
